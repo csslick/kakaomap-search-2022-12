@@ -90,22 +90,19 @@
       });
     }
 
-// 인포윈도우에 표출될 내용
-var iwContent = '<div style="padding:5px;">광화문</div>', 
-iwPosition = new kakao.maps.LatLng(37.574188, 126.97982), //인포윈도우 표시 위치입니다
-iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+    // 인포윈도우에 표출될 내용
+    var iwContent = '<div style="padding:5px;">광화문</div>',
+      iwPosition = new kakao.maps.LatLng(37.574188, 126.97982), //인포윈도우 표시 위치입니다
+      iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
-// 인포윈도우를 생성하고 지도에 표시합니다
-var infowindow = new kakao.maps.InfoWindow({
-  map: map, // 인포윈도우가 표시될 지도
-  position: iwPosition,
-  content: iwContent,
-  removable: iwRemoveable
-});
-
-
- 
- </script>
+    // 인포윈도우를 생성하고 지도에 표시합니다
+    var infowindow = new kakao.maps.InfoWindow({
+      map: map, // 인포윈도우가 표시될 지도
+      position: iwPosition,
+      content: iwContent,
+      removable: iwRemoveable
+    }); 
+  </script>
 </body>
 
 </html>
